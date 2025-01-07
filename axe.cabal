@@ -1,18 +1,18 @@
-cabal-version: 2.2
+cabal-version: 1.12
 
 -- This file has been generated from package.yaml by hpack version 0.37.0.
 --
 -- see: https://github.com/sol/hpack
 
 name:           axe
-version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/axe#readme>
-homepage:       https://github.com/githubuser/axe#readme
-bug-reports:    https://github.com/githubuser/axe/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2025 Author name here
-license:        BSD-3-Clause
+version:        0.1.0.1
+description:    Please see the README on GitHub at <https://github.com/haq0/axe#readme>
+homepage:       https://github.com/haq0/axe#readme
+bug-reports:    https://github.com/haq0/axe/issues
+author:         haquire
+maintainer:     haq@doesnotexist.com
+copyright:      2025 haquire
+license:        AGPL-3
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
@@ -21,14 +21,12 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/axe
+  location: https://github.com/haq0/axe
 
 library
   exposed-modules:
-      Lib
+      Axe.Models
   other-modules:
-      Paths_axe
-  autogen-modules:
       Paths_axe
   hs-source-dirs:
       src
@@ -40,8 +38,6 @@ library
 executable axe-exe
   main-is: Main.hs
   other-modules:
-      Paths_axe
-  autogen-modules:
       Paths_axe
   hs-source-dirs:
       app
@@ -55,8 +51,6 @@ test-suite axe-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_axe
-  autogen-modules:
       Paths_axe
   hs-source-dirs:
       test
