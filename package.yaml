@@ -1,5 +1,5 @@
 name:                axe
-version:             0.1.0.1
+version:             0.1.0.2
 github:              "haq0/axe"
 license:             AGPL-3
 author:              "haquire"
@@ -21,6 +21,9 @@ description:         Please see the README on GitHub at <https://github.com/haq0
 
 dependencies:
 - base >= 4.7 && < 5
+- aeson
+- text
+
 
 ghc-options:
 - -Wall
