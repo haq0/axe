@@ -1,5 +1,5 @@
 name:                axe
-version:             0.1.0.4
+version:             0.1.0.5
 github:              "haq0/axe"
 license:             AGPL-3
 author:              "haquire"
@@ -24,6 +24,8 @@ dependencies:
 - aeson
 - text
 - bytestring
+- optparse-applicative
+- directory
 
 
 ghc-options:

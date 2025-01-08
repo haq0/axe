@@ -5,7 +5,7 @@ cabal-version: 1.12
 -- see: https://github.com/sol/hpack
 
 name:           axe
-version:        0.1.0.4
+version:        0.1.0.5
 description:    Please see the README on GitHub at <https://github.com/haq0/axe#readme>
 homepage:       https://github.com/haq0/axe#readme
 bug-reports:    https://github.com/haq0/axe/issues
@@ -26,6 +26,7 @@ source-repository head
 library
   exposed-modules:
       Axe.Models
+      Axe.Util
   other-modules:
       Paths_axe
   hs-source-dirs:
@@ -35,6 +36,8 @@ library
       aeson
     , base >=4.7 && <5
     , bytestring
+    , directory
+    , optparse-applicative
     , text
   default-language: Haskell2010
 
@@ -50,6 +53,8 @@ executable axe-exe
     , axe
     , base >=4.7 && <5
     , bytestring
+    , directory
+    , optparse-applicative
     , text
   default-language: Haskell2010
 
@@ -66,5 +71,7 @@ test-suite axe-test
     , axe
     , base >=4.7 && <5
     , bytestring
+    , directory
+    , optparse-applicative
     , text
   default-language: Haskell2010
