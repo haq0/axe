@@ -290,7 +290,6 @@ printFileList format fl = case format of
         mapM_ (\f -> putStrLn $ "   └─ " ++ f) validFiles
     putStrLn ""
   Compact -> do
-    putStr $ unpack (name fl) ++ ": "
     putStrLn $
       L.intercalate
         " "
